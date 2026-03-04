@@ -1,10 +1,9 @@
 # OpenSuperWhisper
 
-OpenSuperWhisper is a macOS application that provides real-time audio transcription using the Whisper model. It offers a seamless way to record and transcribe audio with customizable settings and keyboard shortcuts.
+This is a fork of a OpenSuperWhisper, a macOS application that provides real-time audio transcription using the Whisper model. It offers a seamless way to record and transcribe audio with customizable settings and keyboard shortcuts.
 
-<p align="center">
-<img src="docs/image.png" width="400" /> <img src="docs/image_indicator.png" width="400" />
-</p>
+Fork difference: trimmed down list of languages for ease of navigation, added Ukrainian language support and renamed russian into a poetic and fitting name: Dogbarf.
+
 
 ## Features
 
@@ -15,16 +14,7 @@ OpenSuperWhisper is a macOS application that provides real-time audio transcript
 - 📁 Drag & drop audio files for transcription with queue processing
 - 🎤 Microphone selection — switch between built-in, external, Bluetooth and iPhone (Apple Continuity) mics from the menu bar
 - 🌍 Support for multiple languages with auto-detection
-- 🇯🇵🇨🇳🇰🇷 Asian language autocorrect ([autocorrect](https://github.com/huacnlee/autocorrect))
 
-## Installation
-
-```shell
-brew update # Optional
-brew install opensuperwhisper
-```
-
-Or from [GitHub releases page](https://github.com/Starmel/OpenSuperWhisper/releases).
 
 ## Requirements
 
@@ -37,16 +27,6 @@ If you encounter any issues or have questions, please:
 2. Create a new issue with detailed information about your problem
 3. Include system information and logs when reporting bugs
 
-## Building locally
-
-To build locally, you'll need:
-
-    git clone git@github.com:Starmel/OpenSuperWhisper.git
-    cd OpenSuperWhisper
-    git submodule update --init --recursive
-    brew install cmake libomp rust ruby
-    gem install xcpretty
-    ./run.sh build
 
 In case of problems, consult `.github/workflows/build.yml` which is our CI workflow
 where the app gets built automatically on GitHub's CI.
